@@ -4,14 +4,11 @@
  *
  * Author: Prof. Dr. David Buzatto
  */
- 
-package main 
+package main ;
 
-import "core:fmt"
-import rl "vendor:raylib"
+import "core:fmt";
+import rl "vendor:raylib";
 
-SCREEN_WIDTH  :: 800;
-SCREEN_HEIGHT :: 450;
 GRAVITY :: 50;
 
 Ball :: struct {
@@ -31,7 +28,7 @@ pressOffset: rl.Vector2;
 main :: proc() {
 
     rl.SetConfigFlags( {.MSAA_4X_HINT} );
-    rl.InitWindow( SCREEN_WIDTH, SCREEN_HEIGHT, "ODIN Test!" );
+    rl.InitWindow( 800, 450, "ODIN Test - Bouncing Ball" );
     defer rl.CloseWindow();
 
     init_game();
