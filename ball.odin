@@ -4,7 +4,7 @@
  *
  * Author: Prof. Dr. David Buzatto
  */
-package main ;
+package main;
 
 import "core:fmt";
 import rl "vendor:raylib";
